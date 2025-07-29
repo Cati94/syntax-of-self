@@ -18,3 +18,5 @@ Este repositório documenta uma série de desafios emocionais, criativos e técn
 ---
 
 ## 📁 Estrutura do Repositório
+COBOL 
+PYTHON
