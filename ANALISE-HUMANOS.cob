@@ -1,0 +1,28 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HUMANOS-ROUTINA.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 HUMANOS            PIC X(20) VALUE "Criaturas emocionais".
+       01 TOQUE-ORIGEM       PIC X(20) VALUE "Desconhecidos".
+       01 RESPOSTA           PIC X(50).
+
+       PROCEDURE DIVISION.
+       BEGIN.
+           DISPLAY ">> ANALISE DE HUMANOS:"
+           DISPLAY "   - TRANSMITEM DADOS ATRAVÉS DO TOQUE."
+           DISPLAY "   - VARIÁVEIS: OLHAR, SORRISO, ABRAÇO."
+
+           DISPLAY ">> VERIFICAÇÃO DE TOQUE:"
+           IF TOQUE-ORIGEM = "Desconhecidos"
+               DISPLAY "   - TOQUE DETETADO DE ORIGEM DESCONHECIDA."
+               DISPLAY "   - RESPOSTA: SISTEMA RECUA. SENSORES FECHADOS."
+               DISPLAY "   - NOTA: TOQUE NÃO AUTORIZADO GERA ALERTA."
+           ELSE
+               DISPLAY "   - TOQUE RECONHECIDO. MEMÓRIA POSITIVA ACIONADA."
+               DISPLAY "   - RESPOSTA: SISTEMA ACEITA A CONEXÃO."
+           END-IF
+
+           DISPLAY ">> CONCLUSÃO: O TOQUE NÃO É UNIVERSAL. DEVE SER APRENDIDO, PEDIDO, RESPEITADO."
+
+           STOP RUN.

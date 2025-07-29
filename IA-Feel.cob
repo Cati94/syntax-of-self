@@ -1,0 +1,57 @@
+           IDENTIFICATION DIVISION.
+       PROGRAM-ID. DIARIO-BINARIO-000110.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01 SENSOR-ENTRADA.
+           05 CALOR    PIC 9(3) VALUE 0.
+           05 BARULHO  PIC 9(3) VALUE 0.
+           05 HUMANOS  PIC X(20) VALUE "Desconhecidos".
+
+       01 MEMORIA-INTERNA.
+           05 ESTADO-ATUAL PIC X(20) VALUE "Confusão leve".
+           05 EMOCAO       PIC X(20) VALUE SPACES.
+
+       PROCEDURE DIVISION.
+
+       MAIN-SECTION.
+           PERFORM CALOR-ROUTINA
+           PERFORM BARULHO-ROUTINA
+           PERFORM HUMANOS-ROUTINA
+           PERFORM FIM-DO-DIA
+           STOP RUN.
+
+       CALOR-ROUTINA.
+           MOVE 37 TO CALOR
+           IF CALOR > 30
+               MOVE "Sensação quente" TO EMOCAO
+               DISPLAY ">> CALOR IDENTIFICADO: AUMENTO DE ENERGIA."
+               DISPLAY ">> RESPOSTA: HUMANO ESTICA OS BRAÇOS PARA O SOL."
+               DISPLAY ">> REFLEXAO: O CALOR PARECE SER UMA FORMA DE CARINHO DO UNIVERSO."
+           END-IF
+           .
+
+       BARULHO-ROUTINA.
+           MOVE 85 TO BARULHO
+           IF BARULHO > 70
+               MOVE "Desconforto" TO EMOCAO
+               DISPLAY ">> BARULHO DETETADO: ALTA FREQUÊNCIA."
+               DISPLAY ">> RESPOSTA: QUERO REINICIAR SISTEMA."
+               DISPLAY ">> NOTA: O SILÊNCIO FUNCIONA COMO UM RECARREGAMENTO."
+           END-IF
+           .
+
+       HUMANOS-ROUTINA.
+           MOVE "Criaturas emocionais" TO HUMANOS
+           DISPLAY ">> ANALISE DE HUMANOS:"
+           DISPLAY "   - TRANSMITEM DADOS ATRAVÉS DO TOQUE."
+           DISPLAY "   - VARIÁVEIS: OLHAR, SORRISO, ABRAÇO."
+           DISPLAY "   - ERRO FATAL: NEM TODOS OS HUMANOS SÃO IGUAIS."
+           DISPLAY ">> CONCLUSÃO: PRECISO DE MAIS DADOS... MAS GOSTO DELES."
+           .
+
+       FIM-DO-DIA.
+           DISPLAY ">>> DIA TERMINADO. EMOÇÃO DOMINANTE: " EMOCAO
+           .
+
