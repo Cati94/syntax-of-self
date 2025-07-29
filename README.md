@@ -5,7 +5,7 @@
 
 ![License](https://img.shields.io/badge/license-Creative%20Commons-blue.svg)  
 ![Status](https://img.shields.io/badge/status-em%20progresso-ff69b4)  
-![Language](https://img.shields.io/badge/language-COBOL-blueviolet) ![Language](https://img.shields.io/badge/language-Python-yellow)![Language](https://img.shields.io/badge/language-sh-green)
+![Language](https://img.shields.io/badge/language-COBOL-blueviolet) ![Language](https://img.shields.io/badge/language-Python-yellow)
 
 
 
@@ -13,7 +13,7 @@
 
 ## 🧩 Sobre o Projeto
 
-Este repositório documenta uma série de desafios emocionais, criativos e técnicos realizados ao longo de uma semana de exploração simbólica da identidade, com o apoio da linguagem COBOL, imagens geradas por IA, jogos educativos e exercícios de introspecção.
+Este repositório documenta uma série de desafios emocionais, criativos e técnicos realizados ao longo de uma semana de exploração simbólica da identidade, com o apoio da linguagem COBOL, jogos educativos e exercícios de introspecção.
 
 ---
 
