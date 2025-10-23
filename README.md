@@ -11,6 +11,11 @@
 
 ---
 
+ ![Syntax of Self](https://github.com/Cati94/syntax-of-self/blob/main/system.png)
+
+
+---
+
 ## 🧩 Sobre o Projeto
 
 Este repositório documenta uma série de desafios emocionais, criativos e técnicos realizados ao longo de uma semana de exploração simbólica da identidade, com o apoio da linguagem COBOL, jogos educativos e exercícios de introspecção.
